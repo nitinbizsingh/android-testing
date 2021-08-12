@@ -3,4 +3,5 @@
     <string name="create_entry">Create Entry</string>
     <string name="create_entry_hint">Water intake in ml</string>
     <string name="add">Add</string>
+    <string name="saved">Entry saved. Great going!</string>
 </resources>

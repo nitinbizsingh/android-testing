@@ -8,6 +8,7 @@
 
     <EditText
         android:id="@+id/intake_edit_text"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -15,16 +16,16 @@
         android:layout_weight="1"
         android:autofillHints="@string/add"
         android:hint="@string/create_entry_hint"
-        android:inputType="number"
+        android:inputType="text"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/add_entry_button"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:width="60dp"
         android:text="@string/add"
         app:layout_constraintLeft_toRightOf="@id/intake_edit_text"
         app:layout_constraintRight_toRightOf="parent"

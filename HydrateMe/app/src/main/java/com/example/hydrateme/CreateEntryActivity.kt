@@ -1,11 +1,13 @@
 package com.example.hydrateme
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
+
 
 private const val TAG = "CreateEntryActivity"
 
@@ -19,11 +21,12 @@ class CreateEntryActivity : AppCompatActivity() {
         val addButton: View = findViewById(R.id.add_entry_button)
         val entryEditText: EditText = findViewById(R.id.intake_edit_text)
         addButton.setOnClickListener { view ->
-            Snackbar.make(view, resources.getText(R.string.saved), Snackbar.LENGTH_LONG)
-                .show()
-
             val intakeInMl = entryEditText.text.toString().toInt()
-            Log.d(TAG, intakeInMl.toString() + " ml")
+            val data = Intent()
+
+            data.putExtra("intake", intakeInMl)
+            setResult(RESULT_OK, data)
+            finish()
         }
     }
 }

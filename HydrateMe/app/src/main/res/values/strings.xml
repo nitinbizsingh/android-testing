@@ -4,4 +4,6 @@
     <string name="create_entry_hint">Water intake in ml</string>
     <string name="add">Add</string>
     <string name="saved">Entry saved. Great going!</string>
+    <string name="done">You are done for today 👍<day></day></string>
+    <string name="not_done">Drink 3000ml 💦 everyday<day></day></string>
 </resources>
